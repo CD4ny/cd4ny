@@ -38,7 +38,7 @@ function Hero() {
       </div>
       <img
         src={profile}
-        className="bg-white-100 hover:sepia-0 duration-1000 hover:transition-all hover:duration-1000 transition-all sepia rounded-full w-32 md:w-52 animate-fade-left animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal animate-fill-both"
+        className="bg-white-100 hover:sepia-0 duration-1000 hover:transition-all hover:duration-1000 transition-all sepia rounded-full w-40 md:w-64 animate-fade-left animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal animate-fill-both"
         alt="Logo"
       />
     </section>
