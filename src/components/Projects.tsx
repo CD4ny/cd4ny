@@ -14,7 +14,7 @@ function Hero() {
             <h3 className="text-md font-light font-nunito text-blue_(munsell)-700">Nomproj</h3>
             <p className="text-xs font-extralight font-montserrat text-orange_(web)-800">"Global Game Jam register module"</p>
             </div>
-            <img className="w-72" src="https://raw.githubusercontent.com/CD4ny/GGJ_REG/master/Screenshot.webp" alt="project-screenshot" />
+            <img className="w-72" src="https://raw.githubusercontent.com/CD4ny/cd4ny/master/screenshot.webp" alt="project-screenshot" />
       </a>
     </section>
   );
