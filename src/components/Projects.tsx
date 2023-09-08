@@ -1,23 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Project from "./Project";
 
-function Hero() {
+function Projects() {
+  var user = "cd4ny";
 
-  var user = "CD4ny";
+  const [projects1, setProjects] = useState([{id:'',name:'',description:'',html_url:''}]);
 
-  const [projects , setprojects] = useState(0) 
+  const options = { method: "GET" };
+
+    useEffect(() => {
+      fetch("https://api.github.com/users/" + user  + "/repos", options)
+      .then((response) => response.json())
+      .then((response) => setProjects(response))
+      .catch((err) => console.error(err));
+    }, []);
+
+  // setProjects([
+  //   {"name":"cd4ny","description":"asd"}
+  // ]);
 
   return (
-    <section id="projects" className="flex flex-col p-4 justify-center items-center min-h-screen">
-      <h1 className="text-md text-blue_(munsell)-800 font-nunito">Projects</h1>
-      <a href="#" className="flex flex-col border my-4 rounded-lg">
-            <div className="px-2 py-1">
-            <h3 className="text-md font-light font-nunito text-blue_(munsell)-700">Nomproj</h3>
-            <p className="text-xs font-extralight font-montserrat text-orange_(web)-800">"Global Game Jam register module"</p>
-            </div>
-            <img className="w-72" src="https://raw.githubusercontent.com/CD4ny/cd4ny/master/screenshot.webp" alt="project-screenshot" />
-      </a>
+    <section
+      id="projects"
+      className="flex flex-col p-8 justify-start items-center mt-4  min-h-screen"
+    >
+      <h1 className="text-xl text-blue_(munsell)-800 font-nunito mb-3">Projects</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">{
+        projects1.map((item)=>{
+          if(item.name!='')
+          return <Project key={item.id} title={item.name} description={item.description} html_url={item.html_url} />
+        })
+      }</div>
     </section>
   );
 }
 
-export default Hero;
+export default Projects;
