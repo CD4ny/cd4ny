@@ -22,7 +22,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col p-8 justify-start items-center mt-4  min-h-screen"
+      className="flex flex-col p-12 justify-start items-center mt-8  min-h-screen"
     >
       <h1 className="text-xl text-blue_(munsell)-800 font-nunito mb-3">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">{

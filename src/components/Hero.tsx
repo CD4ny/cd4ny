@@ -13,9 +13,9 @@ function Hero() {
   return (
     <section
       id="about"
-      className="flex flex-col-reverse md:flex-row p-4 justify-center items-center min-h-screen  sm:pt-0"
+      className="flex flex-col-reverse items-center justify-center min-h-screen p-4 md:flex-row sm:pt-0"
     >
-      <div className=" max-w-sm ">
+      <div className="max-w-sm ">
         <h1 className="text-lg text-orange_(web) font-nunito">
           Daniel Chaviano Perez
         </h1>
@@ -23,7 +23,7 @@ function Hero() {
           <FontAwesomeIcon className="text-white-400" icon={faLinkedin} size="xl" />
         </a>
         <a href="https://github.com/CD4ny">
-          <FontAwesomeIcon className="text-white-400 px-3" size="xl" icon={faGithubSquare} />
+          <FontAwesomeIcon className="px-3 text-white-400" size="xl" icon={faGithubSquare} />
         </a>
         <a href="mailto://chavianodaniel99@gmail.com">
           <FontAwesomeIcon className="text-white-400" size="xl" icon={faEnvelopeSquare} />
@@ -60,7 +60,7 @@ function Hero() {
       </div>
       <img
         src={profile}
-        className="bg-white-100 mx-12 m-8 hover:sepia-0 duration-1000 hover:transition-all hover:duration-1000 transition-all sepia rounded-full w-40 md:w-64 animate-fade-left animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal animate-fill-both"
+        className="w-64 m-8 mt-12 transition-all duration-1000 rounded-full bg-white-100 hover:sepia-0 hover:transition-all hover:duration-1000 sepia md:w-64 animate-fade-left animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal animate-fill-both"
         alt="Logo"
       />
     </section>

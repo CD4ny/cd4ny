@@ -2,17 +2,14 @@ function NavBar() {
    
   
     return (
-      <header className="bg-eerie_black fixed z-50 w-full flex flex-row pl-2 pr-1 py-1 justify-between">
-        <div className="font-nunito flex">
+      <header className="fixed z-50 flex flex-row justify-between w-full py-1 pl-2 pr-1 bg-eerie_black">
+        <div className="flex text-2xl font-nunito">
             <div className="text-orange_(web)">Xavi</div>
             <div className="text-white-600">.</div>
-            <div className="text">Dev</div>
+            <div className="text-white-300">Dev</div>
         </div>
         <div className="flex flex-row">
-            <a href="#about" className="px-2 border border-white-100 font-thin font-montserrat rounded-md ">
-              Sobre mi
-            </a>
-            <a href="#projects" className="px-2 border border-white-100 font-thin font-montserrat rounded-md ml-1">
+            <a href="#projects" className="px-2 ml-1 font-thin border rounded-md border-white-100 font-montserrat">
               Proyectos
             </a>
         </div>
@@ -20,5 +17,5 @@ function NavBar() {
     )
   }
   
-  export default NavBar;
+  export default NavBar
   
